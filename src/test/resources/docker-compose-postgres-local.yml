@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  postgres:
+    container_name: vkatun-kinopoisk
+    image: postgres:15.2
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: vkatun-kinopoisk
+    ports:
+      - "5432:5432"
